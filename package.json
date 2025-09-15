@@ -1,13 +1,17 @@
 {
-  "name": "expressjs_course",
+  "name": "my-shop-monorepo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A shop app monorepo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:backend": "npm --workspace=backend start",
+    "start:frontend": "npm --workspace=frontend dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.16.0"
+  "workspaces": [
+    "frontend",
+    "backend"
+  ]
 }
